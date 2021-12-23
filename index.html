@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="ping.css">
+
+
+
+
+    <style>
+        .winner {
+            color: rgb(32, 195, 73);
+        }
+
+        .loser {
+            color: rgb(201, 66, 25);
+        }
+
+        .center {
+            text-align: center;
+            font-size: 9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                PING PONG Score Keeper
+                            </p>
+                            <!-- <button class="card-header-icon" aria-label="more options">
+                            <span class="icon">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button> -->
+                        </header>
+                        <div class="card-content">
+                            <div class="content" id="ScoreOneTwo">
+                                <h1 class="title is-1"><span id="player1Display">0</span> to <span
+                                        id="player2Display">0</span></h1>
+
+                            </div>
+                            <label for="playTo" class="label is-large is-inline">MAX Score</label>
+
+                            <div class="select is-rounded">
+
+                                <select id="playTo">
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="column">
+                            <p class="subtitle">
+                                Use the buttons below to keep track of your score!
+                            </p>
+                            <footer class="card-footer">
+                                <button id="player1Button" class="is-link button card-footer-item">+1 Player
+                                    One</button>
+                                <button id="player2Button" class="is-link button card-footer-item">+1 Player
+                                    Two</button>
+
+                                <!-- <a href="#" class="card-footer-item">Save</a>
+                        <a href="#" class="card-footer-item">Edit</a>
+                        <a href="#" class="card-footer-item">Delete</a> -->
+                            </footer>
+                        </div>
+                        <div class="column" is-offset-one-quarter">
+                            <button id="resetButton" class="is-danger button is-12">RESET</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <h1><span id="player1Display">0</span> to <span id="player2Display">0</span></h1>
+    <select name="" id="playTo">
+
+    </select> -->
+    <!-- <button>+1 Player One</button>
+    <button id="player2Button">+1 Player Two</button>
+    <button id="resetButton">RESET</button> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="pong.js"></script>
+
+</body>
+
+</html>
